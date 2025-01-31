@@ -1,0 +1,115 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@android:color/white"
+        android:paddingHorizontal="8dp"
+        android:gravity="center_vertical"
+        android:elevation="2dp">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:padding="8dp"
+            android:background="@null"
+            android:contentDescription="Back Button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back" />
+
+        <ImageButton
+            android:id="@+id/saveButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:padding="8dp"
+            android:background="@null"
+            android:contentDescription="Save Button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/save" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/appBar"
+        android:background="@android:color/darker_gray" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appBar"
+        android:fillViewport="true"
+        android:windowSoftInputMode="adjustResize"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp">
+
+            <EditText
+                android:id="@+id/titleEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@null"
+                android:hint="Title"
+                android:inputType="textMultiLine"
+                android:maxLines="3"
+                android:minHeight="50dp"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/black"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+
+                />
+
+            <EditText
+                android:id="@+id/noteEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@null"
+                android:gravity="start|top"
+                android:hint="Write your journey"
+                android:inputType="textMultiLine"
+                android:minLines="2"
+                android:scrollbars="vertical"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@color/Gray"
+                android:textSize="23sp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/dateTimeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="30dp"
+                android:text="15/07/2021, 16:30"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

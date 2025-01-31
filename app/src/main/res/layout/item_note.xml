@@ -1,0 +1,58 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/card_background"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/noteTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="23sp"
+            android:textColor="#212121"
+            android:minLines="2"
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+
+        <TextView
+            android:id="@+id/noteContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:textColor="#757575"
+            android:minLines="12"
+            android:maxLines="12"
+            android:ellipsize="end" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:layout_marginTop="8dp"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/noteDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#616161"
+            android:text="20 January 2023" />
+    </LinearLayout>
+</LinearLayout>

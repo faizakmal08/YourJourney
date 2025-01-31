@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/purple_500"
+        android:padding="16dp"
+        android:clipChildren="true"
+    android:clipToPadding="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="8dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amazing Journey!"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What's your story today?"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+        <ImageView
+            android:id="@+id/headerImage"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="-40dp"
+            android:layout_marginEnd="-9dp"
+            android:layout_marginBottom="-37dp"
+            android:contentDescription="Header Illustration"
+            android:scaleType="centerCrop"
+            android:src="@drawable/illustrasi3" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@id/header"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/centerImage"
+            android:layout_width="235dp"
+            android:layout_height="285dp"
+            android:contentDescription="Content Illustration"
+            android:scaleType="fitCenter"
+            android:src="@drawable/illustrasi2" />
+
+        <TextView
+            android:id="@+id/mainText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Your Journey"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/secondaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Every big step start with small step.\nNotes your first idea and start \nyour journey!"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:alpha="0.7" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        tools:listitem="@layout/item_note"
+        android:visibility="gone" />
+
+
+<ImageButton
+android:id="@+id/fab"
+android:layout_width="56dp"
+android:layout_height="56dp"
+android:layout_alignParentEnd="true"
+android:layout_alignParentBottom="true"
+android:layout_margin="16dp"
+android:src="@drawable/ic_add"
+android:contentDescription="Add Button"
+android:scaleType="centerInside"
+android:background="@null" />
+    </RelativeLayout>
