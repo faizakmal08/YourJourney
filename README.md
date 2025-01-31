@@ -11,7 +11,7 @@ YourJourney is a beautifully designed notes app that helps you **capture, organi
 
 ## 📸 Screenshots
 
-![HomeNotes](https://github.com/user-attachments/assets/cc0a89e7-b57b-4ac1-9d2c-d87fa31edcad)
+![HomeNotes](https://github.com/user-attachments/assets/77bc0b9b-1164-44b0-a641-bc72694244e2)
 
 ## 🚀 Tech Stack
 
